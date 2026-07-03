@@ -5,6 +5,7 @@ const checks = [
   { path: '/users/1', expect: 200 },
   { path: '/users/99', expect: 404 },
   { path: '/products', expect: 200 },
+  { path: '/health', expect: 200 },
 ];
 
 let passed = 0;
