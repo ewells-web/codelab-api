@@ -34,6 +34,10 @@ app.get('/products/:id', (req, res) => {
   res.json(product);
 });
 
+app.get('/health', (req, res) => {
+  res.json({ status: 'ok', uptime: Math.floor(process.uptime()) });
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
